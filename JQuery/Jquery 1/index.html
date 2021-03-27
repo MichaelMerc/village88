@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Jquery Task</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('#p1').addClass('red');
+            });
+            $('#btn2').click(function(){
+               $('img').slideToggle();
+            });
+            $('#btn3').click(function(){
+               $('#p3').append(" ADD MORE! ");
+            });
+        });
+
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Add Class</h1>
+            <input id="btn1" class="col" type="button" value="Add Class">
+            <p id="p1" class="col first">Click the button to add class 'red' to this paragraph</p>
+        </div>
+        <div class="row">
+            <h1>Slidetoggle</h1>
+            <input id="btn2" class="col" type="button" value="Slidetoggle">
+            <img src="https://images.pexels.com/photos/7037804/pexels-photo-7037804.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="img" >
+            <p class="col">Click the button to slide toggle a hidden image</p>
+        </div>
+        <div class="row">
+            <h1>Append</h1>
+            <input id="btn3" class="col" type="button" value="Append">
+            <p id="p3" class="col">Click the button to append a new paragraph</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
